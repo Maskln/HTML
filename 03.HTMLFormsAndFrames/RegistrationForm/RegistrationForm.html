@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <form name="RegistrationForm" method="post"> <!--The Form has been tested in Firefox Developer Edition-->
+        <table border="1" cellspacing="0">
+            <colgroup><col width="150" /> <col width="250" />  </colgroup>
+            <tr>
+                <th width="100px"><label for="lName">Last Name</label></th>
+                <td><input type="text" id="lName" name="lName" placeholder="Enter your Last name" size="35" /></td>
+            </tr>
+            <tr>
+                <th width="100px"><label for="fName">First Name</label></th>
+                <td><input type="text" id="fName" name="fName" placeholder="Enter your First name" size="35" /></td>
+            </tr>
+            <tr>
+                <th align="center"><label for="address">Adrress</label></th>
+                <td><textarea id="address" name="adress" placeholder="Enter your Address"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="city">City</label></th>
+                <td>
+                    <input type="text" id="city" name="City" placeholder="Enter your City's name" size="23" />
+                    <label for="state">State</label>
+                    <input type="text" id="state" size="4" />
+                </td>
+            </tr>
+            <tr>
+                <th><label for="postCode">ZIP/Postal Code</label></th>
+                <td><input type="text" id="postCode" name="postCode" placeholder="2700" size="6" /> </td>
+            </tr>
+            <tr>
+                <th><label for="country">Country</label></th>
+                <td>
+                    <select id="country" name="Country" >
+                        <option value="1" selected="selected">Bulgaria</option>
+                        <option value="2">Macedonia</option>
+                        <option value="3">Albania</option>
+                        <option value="4">Unated States of America</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="countryCode">Phone(country code,</label>
+                    <label for="areaCode">area code,</label>
+                    <label for="number"> number)</label>
+                </th>
+                <td>
+                 (+<input type="tel" id="countryCode" name="countryCode" placeholder="359" size="5" />)
+                    <input type="tel" id="areaCode" name="areaCode" placeholder="888" size="5" />
+                    <input type="tel" id="number" name="number" placeholder="666999" size="12" />
+                </td>
+            </tr>
+            <tr>
+                <th><label for="email">E-mail</label></th>
+                <td><input type="email" id="email" name="email" placeholder="pesho.petrov@gmail.com" size="35" /></td>
+            </tr>
+            <tr>
+                <th><label for="dateOfBirth">Birth date</label></th>
+                <td><input type="text" id="dateOfBirth" name="dateOfBirth" placeholder="дд.мм.гггг г" /> </td>
+            </tr>
+            <tr>
+                <th><label for="gender">Gender</label></th>
+                <td>
+                    <select id="gender" name="gender">
+                        <option value="1" selected="selected">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="startingDate">Starting date</label></th>
+                <td>
+                    <input type="radio" id="startingDate" name="date" value="Spring 2015" /> Spring 2015
+                    <input type="radio" name="date" value="Summer 2015" /> Summer 2015 
+                </td>
+            </tr>
+            <tr>
+                <th><label for="comments">Comments/Questions</label></th>
+                <td><textarea id="comments" name="commentsAndQuestions" placeholder="Comments or Questions" rows="4"></textarea></td>
+            </tr>
+            <tr bgcolor="cyan">
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Clear This Form" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
